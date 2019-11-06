@@ -8,16 +8,20 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/et"
+    <TextView
+        android:id="@+id/tv"
         android:layout_width="match_parent"
-        android:layout_height="48dp" />
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="自定义支付密码输入Demo"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
 
     <com.example.pwdinputdemo.PasswordView
         android:id="@+id/pwdInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/et"
+        android:layout_below="@+id/tv"
         android:layout_centerHorizontal="true"
         app:pwdCurrentStrokeColor="@color/colorAccent"
         app:pwdDotRadius="6dp"
@@ -27,12 +31,19 @@
         app:pwdStrokeWidth="0.5dp"
         app:pwdTextSize="24sp" />
 
-    <Button
-        android:id="@+id/btn1"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/pwdInput"
-        android:text="显示隐藏密码" />
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="显示隐藏密码" />
+
+    </LinearLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
