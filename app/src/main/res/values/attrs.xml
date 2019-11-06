@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PasswordView">
+        <!--边框宽度-->
+        <attr name="pwdStrokeWidth" format="dimension" />
+        <attr name="pwdStrokeColor" format="color|reference" />
+        <!--输入到的位置边框颜色-->
+        <attr name="pwdCurrentStrokeColor" format="color|reference" />
+        <!--密码长度-->
+        <attr name="pwdLength" format="integer" />
+        <!--小方格宽/高度-->
+        <attr name="pwdLatticeLength" format="dimension" />
+        <attr name="pwdDotRadius" format="dimension" />
+        <attr name="pwdTextSize" format="dimension" />
+    </declare-styleable>
+
+</resources>
